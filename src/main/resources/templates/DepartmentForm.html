@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>DepartmentForm</title>
+</head>
+<body>
+<th:bock th:insert="Header.html"></th:bock>
+	<div class="container_fluid">
+		<div class="card">
+			<div class="card-header">
+				<h1>Department Form</h1>
+			</div>
+			<div class="card-body">
+				<form action="/department" method="post">
+					<div class="row p-2">
+						<div class="col-4">Department Name</div>
+						<div class="col-6">
+							<input type="text" name="dept_name" class="form-control">
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-4">Department Head</div>
+						<div class="col-6">
+							<input type="text" name="dept_head" class="form-control">
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-4">Department Phone</div>
+						<div class="col-6">
+							<input type="text" name="dept_phone" class="form-control">
+						</div>
+					</div>
+
+					<div class="row p-2">
+						<div class="col-4"></div>
+						<div class="col-6">
+							<input type="submit" value="Add" class="btn btn-success btn-lg">
+						</div>
+					</div>
+				</form>
+
+
+			</div>
+			<div class="card-footer text-center">Copyright@2023</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile</title>
+</head>
+<body>
+	<th:bock th:insert="Header.html"></th:bock>
+	<div class="container_fluid">
+		<div class="card">
+			<div class="card-header">
+				<h1>Profile</h1>
+			</div>
+			<div class="card-body">
+					<div class="row p-2">
+						<div class="col-4">First Name</div>
+						<div class="col-6">
+							<label>[[${session.activeUser.fname}]]</label>
+						</div>
+					</div>
+			</div>
+			<div class="card-body">
+					<div class="row p-2">
+						<div class="col-4">Last Name</div>
+						<div class="col-6">
+							<label>[[${session.activeUser.lname}]]</label>
+						</div>
+					</div>
+			</div>
+			<div class="card-body">
+					<div class="row p-2">
+						<div class="col-4">Username</div>
+						<div class="col-6">
+							<label>[[${session.activeUser.username}]]</label>
+						</div>
+					</div>
+			</div>
+			<div class="card-body">
+					<div class="row p-2">
+						<div class="col-4">Email</div>
+						<div class="col-6">
+							<label>[[${session.activeUser.email}]]</label>
+						</div>
+					</div>
+			</div>
+			
+			<div class="card-footer text-center">Copyright@2023</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

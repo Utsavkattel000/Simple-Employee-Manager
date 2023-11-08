@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://wwww.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Upload</title>
+</head>
+<body>
+<th:bock th:insert="Header.html"></th:bock>
+	<div class="container_fluid">
+		<div class="card">
+			<div class="card-header">
+				<h1>Upload Form</h1>
+			</div>
+			<div class="card-body">
+				<form action="/upload" method="post" enctype="multipart/form-data">
+					<div class="row p-2">
+						<div class="col-4">Select : </div>
+						<div class="col-6">
+							<input type="file" name="image" class="form-control">
+						</div>
+					</div>
+					
+
+					<div class="row p-2">
+						<div class="col-4"></div>
+						<div class="col-6">
+							<input type="submit" value="Upload" class="btn btn-success">
+						</div>
+					</div>
+					<p> [[${message}]]</p>
+				</form>
+
+
+			</div>
+			<div class="card-footer text-center">Copyright@2023</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
